@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.Header{
+   box-sizing: border-box;
+   height:25px;
+   width: 100vw;
+   border:solid;
+   border-color: black;
+
+}
+
+.BookList{
+  float:left;
+  width:50%;
+  box-sizing: border-box;
+}
+.Shelf{
+  float:right;
+  width:50%;
+}
+  
