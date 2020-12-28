@@ -2,21 +2,17 @@ import React, { Component } from "react";
 
 
  class BookList extends Component{
-   constructor () {
-       super();
-       this.state = {
-           
-       }
-   }
-     
-     
-    render(){
-        let list = this.props.books.map([id,title,author,image]) 
+      
+ 
+      render(){
+        
         
     return(
         <div>
-        <div>List</div>
-        <div>{list}</div>
+        <h2>List</h2>
+        <div>{this.props.books.map(book => {
+            return (<div>{book.id}<br></br>{book.title}<br></br>{book.author}<br></br>{book.img}</div>)
+        })}</div>
         </div>
     )
 }

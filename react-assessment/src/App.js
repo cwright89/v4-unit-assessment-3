@@ -7,6 +7,7 @@ import data from './data';
 
 class App extends Component{
   constructor(){
+    console.log(data)
     super()
     this.state ={
       books: data
@@ -15,11 +16,12 @@ class App extends Component{
   }
   
   render() {
+    console.log(this.state.data)
   return (
     <div className="App">
-      <Header class="Header"/>
-      <BookList class="BookList" books={this.state.books}/>
-      <Shelf class="Shelf"/>
+      <Header />
+      <BookList  books={this.state.books}/>
+      <Shelf />
     </div>
   );
 }
